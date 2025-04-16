@@ -1,131 +1,271 @@
+"use client";
+
 import { motion } from "framer-motion";
 import {
-  FaLaptopCode,
-  FaMobileAlt,
-  FaPaintBrush,
-  FaCloud,
-} from "react-icons/fa";
+  Laptop,
+  Smartphone,
+  Paintbrush,
+  Cloud,
+  ArrowRight,
+  Code,
+  Database,
+  Globe,
+  ShieldCheck,
+} from "lucide-react";
 
 const Services = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  const services = [
+    {
+      title: "Web Development",
+      description:
+        "We build highly interactive, fast, and responsive websites tailored to meet your business needs.",
+      icon: <Laptop className="w-8 h-8" />,
+      link: "/services#web-development",
+      linkText: "Let's Build Together",
+      features: [
+        "Custom Web Apps",
+        "E-commerce",
+        "CMS Solutions",
+        "API Integration",
+      ],
+    },
+    {
+      title: "Mobile App Development",
+      description:
+        "We design user-friendly mobile apps for iOS and Android that cater to your customers' needs and enhance engagement.",
+      icon: <Smartphone className="w-8 h-8" />,
+      link: "/services#mobile-development",
+      linkText: "Start Your App Journey",
+      features: [
+        "iOS & Android",
+        "Cross-platform",
+        "UI/UX Design",
+        "App Store Optimization",
+      ],
+    },
+    {
+      title: "UI/UX Design",
+      description:
+        "We create intuitive and visually stunning designs that enhance user experience and streamline navigation.",
+      icon: <Paintbrush className="w-8 h-8" />,
+      link: "/services#ui-ux-design",
+      linkText: "Craft a Beautiful Experience",
+      features: [
+        "User Research",
+        "Wireframing",
+        "Prototyping",
+        "Usability Testing",
+      ],
+    },
+    {
+      title: "Cloud Hosting",
+      description:
+        "We provide secure and scalable cloud infrastructure solutions for your business.",
+      icon: <Cloud className="w-8 h-8" />,
+      link: "/services#cloud-hosting",
+      linkText: "Explore Cloud Services",
+      features: [
+        "AWS/GCP/Azure",
+        "Scalable Solutions",
+        "24/7 Monitoring",
+        "Cost Optimization",
+      ],
+    },
+    {
+      title: "Backend Development",
+      description:
+        "We build robust, scalable backend systems that power your applications with reliability and performance.",
+      icon: <Database className="w-8 h-8" />,
+      link: "/services#backend-development",
+      linkText: "Power Your Applications",
+      features: [
+        "API Development",
+        "Database Design",
+        "Microservices",
+        "Performance Optimization",
+      ],
+    },
+    {
+      title: "Web Security",
+      description:
+        "We implement comprehensive security measures to protect your digital assets and user data.",
+      icon: <ShieldCheck className="w-8 h-8" />,
+      link: "/services#web-security",
+      linkText: "Secure Your Digital Assets",
+      features: [
+        "Vulnerability Assessment",
+        "Security Audits",
+        "Compliance",
+        "Data Protection",
+      ],
+    },
+    {
+      title: "Custom Software",
+      description:
+        "We develop tailor-made software solutions designed specifically for your unique business challenges.",
+      icon: <Code className="w-8 h-8" />,
+      link: "/services#custom-software",
+      linkText: "Discuss Your Requirements",
+      features: [
+        "Bespoke Solutions",
+        "Enterprise Software",
+        "Legacy Modernization",
+        "Workflow Automation",
+      ],
+    },
+    {
+      title: "SEO & Analytics",
+      description:
+        "We optimize your digital presence to improve visibility, traffic, and conversion rates.",
+      icon: <Globe className="w-8 h-8" />,
+      link: "/services#seo-analytics",
+      linkText: "Boost Your Online Presence",
+      features: [
+        "SEO Optimization",
+        "Performance Tracking",
+        "Conversion Analysis",
+        "Growth Strategies",
+      ],
+    },
+  ];
+
   return (
     <section
       id="services"
-      className="py-16 bg-gradient-to-b from-gray-100 to-white"
+      className="py-24 bg-gradient-to-b from-gray-900 to-blue-900 text-white"
     >
-      <div className="max-w-screen-xl mx-auto px-6 text-center">
-        {/* Section Title */}
-        <motion.h2
-          className="text-4xl lg:text-5xl font-extrabold text-blue-600 mb-12 tracking-wide"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          Our Expertise
-        </motion.h2>
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <motion.span
+            className="inline-block py-1 px-3 rounded-full bg-blue-500/20 text-blue-300 text-sm font-medium mb-3"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            SERVICES
+          </motion.span>
+          <motion.h2
+            className="text-4xl lg:text-5xl font-extrabold mb-4 tracking-tight"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Our Expertise
+          </motion.h2>
+          <motion.p
+            className="text-xl text-blue-100 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Comprehensive digital solutions to help your business thrive
+          </motion.p>
+        </div>
 
         {/* Service Cards */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-          {/* Service 1: Web Development */}
-          <motion.div
-            className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="flex justify-center items-center mb-6">
-              <FaLaptopCode className="text-5xl text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Web Development
-            </h3>
-            <p className="text-gray-600 mb-6">
-              We build highly interactive, fast, and responsive websites
-              tailored to meet your business needs.
-            </p>
-            <a
-              href="/contact"
-              className="text-blue-600 hover:text-blue-700 font-semibold underline"
+        <motion.div
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-all duration-300 group"
+              variants={itemVariants}
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              Let's Build Together
-            </a>
-          </motion.div>
+              <div className="flex flex-col h-full">
+                <div className="mb-6 p-3 bg-blue-500/20 rounded-lg w-fit">
+                  <div className="text-blue-300 group-hover:text-blue-200 transition-colors">
+                    {service.icon}
+                  </div>
+                </div>
 
-          {/* Service 2: Mobile App Development */}
-          <motion.div
-            className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="flex justify-center items-center mb-6">
-              <FaMobileAlt className="text-5xl text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Mobile App Development
-            </h3>
-            <p className="text-gray-600 mb-6">
-              We design user-friendly mobile apps for iOS and Android that cater
-              to your customers' needs and enhance engagement.
-            </p>
-            <a
-              href="/contact"
-              className="text-blue-600 hover:text-blue-700 font-semibold underline"
-            >
-              Start Your App Journey
-            </a>
-          </motion.div>
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors">
+                  {service.title}
+                </h3>
 
-          {/* Service 3: UI/UX Design */}
-          <motion.div
-            className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="flex justify-center items-center mb-6">
-              <FaPaintBrush className="text-5xl text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              UI/UX Design
-            </h3>
-            <p className="text-gray-600 mb-6">
-              We create intuitive and visually stunning designs that enhance
-              user experience and streamline navigation.
-            </p>
-            <a
-              href="/contact"
-              className="text-blue-600 hover:text-blue-700 font-semibold underline"
-            >
-              Craft a Beautiful Experience
-            </a>
-          </motion.div>
-          {/* Service 5 */}
-          <motion.div
-            className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            <div className="flex flex-col justify-center items-center mb-6">
-              <div className="text-blue-600 text-4xl mb-6">
-                <FaCloud className="mr-2" />
+                <p className="text-blue-100/80 mb-6 flex-grow">
+                  {service.description}
+                </p>
+
+                <div className="mb-6">
+                  <ul className="space-y-2">
+                    {service.features.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center text-sm text-blue-200/70"
+                      >
+                        <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2"></div>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  className="mt-auto"
+                >
+                  <a
+                    href={service.link}
+                    className="inline-flex items-center text-blue-300 hover:text-blue-200 font-medium transition-colors"
+                  >
+                    {service.linkText}
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </motion.div>
               </div>
-              <h4 className="text-2xl font-semibold text-gray-800 mb-4">
-                Web Hosting
-              </h4>
-              <p className="text-gray-600">
-                We provide secure and scalable cloud infrastructure solutions
-                for your business.
-              </p>
-              <a
-                href="/contact"
-                className="text-blue-600 hover:text-blue-700 font-semibold underline mt-6"
-              >
-                Explore Cloud Services
-              </a>
-            </div>
-          </motion.div>
-        </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="/services"
+            className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-blue-500/30 hover:shadow-xl"
+          >
+            View All Services
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
