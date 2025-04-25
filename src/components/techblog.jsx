@@ -75,7 +75,7 @@ const TechBlog = () => {
   return (
     <section className="bg-gray-50 py-12 px-6 md:px-12 lg:px-20">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 text-center mt-12 mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 text-center mt-20 mb-6">
           High Tech
         </h1>
         <p className="text-lg text-gray-700 text-center mb-10">

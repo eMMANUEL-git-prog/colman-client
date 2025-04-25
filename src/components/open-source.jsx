@@ -4,7 +4,7 @@ const OpenSourceBlog = () => {
   return (
     <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-12 lg:px-20 overflow-x-hidden">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl sm:text-3xl md:text-5xl font-extrabold text-blue-900 mt-12 mb-6">
+        <h1 className="text-3xl sm:text-3xl md:text-5xl font-extrabold text-blue-900 mt-20 mb-6">
           Getting Started with Open Source Contributions 🚀
         </h1>
         <p className="text-base sm:text-lg text-gray-700 mb-10 max-w-3xl mx-auto">

@@ -101,7 +101,7 @@ function DoubleNavbar() {
       submenu: [
         {
           label: "Our Story",
-          href: "/about#story",
+          href: "#about",
           icon: <FileText className="w-4 h-4 ml-1" />,
         },
         {
@@ -267,7 +267,7 @@ function DoubleNavbar() {
     },
     {
       label: "About Us",
-      href: "/about",
+      href: "#about",
       icon: <Building className="w-5 h-5 ml-2 text-blue-400" />,
     },
     {
