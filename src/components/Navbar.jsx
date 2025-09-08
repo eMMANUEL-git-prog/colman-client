@@ -472,22 +472,17 @@ function DoubleNavbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav
-        className={`transition-all duration-300 ${
-          scrolled
-            ? "bg-gray-900/95 backdrop-blur-md shadow-lg py-2"
-            : "bg-gradient-to-r from-gray-800 via-blue-900 to-indigo-900 py-4"
-        }`}
-      >
+      <nav className="bg-gradient-to-r from-gray-200 via-blue-900 to-indigo-900 sm:py-2 md:py-4">
         <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
               <a href="/" className="flex items-center space-x-2">
-                <img src="/logo.png" alt="Logo" className="h-10 md:h-12" />
-                <span className="font-bold text-xl hidden sm:block text-white">
-                  COLMAN
-                </span>
+                <img
+                  src="/new_logo2.png"
+                  alt="Logo"
+                  className="h-6 sm:h-10 md:h-12"
+                />
               </a>
             </div>
 

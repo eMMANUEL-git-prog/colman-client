@@ -118,9 +118,8 @@ const Footer = () => {
 
           {/* colman */}
           <div>
-            <div className="flex items-end space-x-2 text-lg font-bold mb-4 uppercase border-b border-gray-700 pb-2">
-              <img src="/logo.png" alt="Logo" className="h-8" />
-              <span className="font-bold">COLMAN</span>
+            <div className="flex items-end space-x-2 text-lg font-bold mb-4 uppercase border-b border-gray-700 bg-gray-200">
+              <img src="/new_logo2.png" alt="logo" className="h-8" />
             </div>
             <ul className="space-y-2">
               <li className="flex items-center group">

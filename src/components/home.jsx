@@ -58,11 +58,14 @@ const Home = () => {
 
   // Client logos (placeholder URLs - replace with actual client logos)
   const clientLogos = [
-    "/user.jpg?height=60&width=120",
-    "/user.jpg?height=60&width=120",
-    "/user.jpg?height=60&width=120",
-    "/user.jpg?height=60&width=120",
-    "/user.jpg?height=60&width=120",
+    "/svg/Opera.svg?height=60&width=120",
+    "/svg/AWS.svg?height=60&width=120",
+    "/svg/Opera.svg?height=60&width=120",
+    "/svg/bobby.png?height=60&width=120",
+    "/svg/uoe.png?height=60&width=120",
+    "/svg/Opera.svg?height=60&width=120",
+    "/svg/Opera.svg?height=60&width=120",
+    "/svg/Opera.svg?height=60&width=120",
   ];
 
   return (
@@ -178,7 +181,7 @@ const Home = () => {
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+          className="hidden md:absolute bottom-10 left-1/2 transform -translate-x-1/2 md:flex flex-col items-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.8 }}
@@ -219,10 +222,10 @@ const Home = () => {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-12 bg-gray-800">
+      <section className="py-12 bg-gray-200">
         <div className="container mx-auto px-4">
           <motion.h2
-            className="text-center text-2xl font-semibold text-gray-300 mb-10"
+            className="text-center text-2xl font-semibold text-indigo-900 mb-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -241,7 +244,7 @@ const Home = () => {
             {clientLogos.map((logo, index) => (
               <motion.div
                 key={index}
-                className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                className="transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
