@@ -58,14 +58,14 @@ const Home = () => {
 
   // Client logos (placeholder URLs - replace with actual client logos)
   const clientLogos = [
-    "/svg/Opera.svg?height=60&width=120",
-    "/svg/AWS.svg?height=60&width=120",
-    "/svg/Opera.svg?height=60&width=120",
+    "/svg/coa.png?height=60&width=120",
+    "/svg/jumia.png?height=60&width=120",
+    "/svg/bolt.jpeg?height=60&width=120",
     "/svg/bobby.png?height=60&width=120",
     "/svg/uoe.png?height=60&width=120",
-    "/svg/Opera.svg?height=60&width=120",
-    "/svg/Opera.svg?height=60&width=120",
-    "/svg/Opera.svg?height=60&width=120",
+    "/svg/kilimall.png?height=60&width=120",
+    "/svg/kcb.png?height=60&width=120",
+    "/svg/safaricom.png?height=60&width=120",
   ];
 
   return (
@@ -222,7 +222,7 @@ const Home = () => {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-12 bg-gray-200">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-center text-2xl font-semibold text-indigo-900 mb-10"

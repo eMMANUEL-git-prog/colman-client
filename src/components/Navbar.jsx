@@ -472,7 +472,7 @@ function DoubleNavbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-gradient-to-r from-gray-200 via-blue-900 to-indigo-900 sm:py-2 md:py-4">
+      <nav className="bg-gradient-to-r from-gray-200 via-blue-900 to-indigo-900 py-1 sm:py-2 md:py-4">
         <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="flex items-center justify-between">
             {/* Logo */}
