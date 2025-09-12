@@ -8,6 +8,7 @@ import Blog from "./components/techblog";
 import ApiDocBlog from "./components/api-documentation";
 import OpenSourceBlog from "./components/open-source";
 import Price from "./components/pricing";
+import PortfolioPage from "./components/portfolio";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/docs" element={<ApiDocBlog />} />
             <Route path="/opensource" element={<OpenSourceBlog />} />
             <Route path="/pricing" element={<Price />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
           </Routes>
         </main>
 

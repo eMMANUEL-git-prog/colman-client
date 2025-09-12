@@ -22,7 +22,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-800 text-white relative">
+    <footer className="bg-gradient-to-b from-gray-400 via-gray-600 to-gray-900 text-white relative">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4 uppercase border-b border-gray-700 pb-2">
+            <h3 className="text-lg font-bold mb-4 uppercase border-b border-gray-200 pb-2">
               Contact Us
             </h3>
             <div className="space-y-3">
@@ -69,7 +69,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4 uppercase border-b border-gray-700 pb-2">
+            <h3 className="text-lg font-bold mb-4 uppercase border-b border-gray-200 pb-2">
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -118,8 +118,8 @@ const Footer = () => {
 
           {/* colman */}
           <div>
-            <div className="flex items-end space-x-2 text-lg font-bold mb-4 uppercase border-b border-gray-700 bg-gray-200">
-              <img src="/new_logo2.png" alt="logo" className="h-8" />
+            <div className="flex items-end space-x-2 text-lg font-bold mb-4 uppercase border-b border-gray-200 pb-3">
+              <img src="/new_logo2.png" alt="logo" className="h-6" />
             </div>
             <ul className="space-y-2">
               <li className="flex items-center group">
@@ -163,7 +163,7 @@ const Footer = () => {
 
           {/* Newsletter Signup - New Section */}
           <div>
-            <h3 className="text-lg font-bold mb-4 uppercase border-b border-gray-700 pb-2">
+            <h3 className="text-lg font-bold mb-4 uppercase border-b border-gray-200 pb-2">
               Why choose us
             </h3>
             <ul className="space-y-2">
@@ -189,7 +189,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-700">
-          <div className="flex justify-center space-x-6 mb-8">
+          {/* <div className="flex justify-center space-x-6 mb-8">
             <a
               href="#"
               aria-label="Facebook"
@@ -225,7 +225,7 @@ const Footer = () => {
             >
               <Github className="h-6 w-6 text-gray-400" />
             </a>
-          </div>
+          </div> */}
           <div className="text-center pb-4">
             <p className="text-sm">
               © {currentYear} by Colman. All rights reserved.

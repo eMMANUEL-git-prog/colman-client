@@ -27,7 +27,7 @@ const PortfolioPage = () => {
       id: 1,
       title: "E-Commerce Platform",
       category: "web",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A comprehensive e-commerce solution with advanced product filtering, payment integration, and inventory management.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
@@ -38,7 +38,7 @@ const PortfolioPage = () => {
       id: 2,
       title: "Healthcare Mobile App",
       category: "mobile",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A patient-centered mobile application for appointment scheduling, medical records access, and telemedicine.",
       technologies: ["React Native", "Firebase", "Node.js"],
@@ -49,7 +49,7 @@ const PortfolioPage = () => {
       id: 3,
       title: "Financial Dashboard",
       category: "web",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "An interactive financial dashboard with real-time data visualization, reporting, and analytics.",
       technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
       id: 4,
       title: "Travel Companion App",
       category: "mobile",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A feature-rich travel app with itinerary planning, location-based recommendations, and offline maps.",
       technologies: ["Flutter", "Google Maps API", "Firebase"],
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
       id: 5,
       title: "Corporate Website Redesign",
       category: "design",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A complete redesign of a corporate website focusing on user experience, accessibility, and modern aesthetics.",
       technologies: ["Figma", "Adobe XD", "HTML/CSS", "JavaScript"],
@@ -82,7 +82,7 @@ const PortfolioPage = () => {
       id: 6,
       title: "Inventory Management System",
       category: "custom",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A custom inventory management solution with barcode scanning, reporting, and supplier management.",
       technologies: [".NET", "SQL Server", "React", "Azure"],
@@ -93,7 +93,7 @@ const PortfolioPage = () => {
       id: 7,
       title: "Educational Platform",
       category: "web",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "An interactive learning platform with course management, video streaming, and progress tracking.",
       technologies: ["Next.js", "MongoDB", "AWS S3", "Tailwind CSS"],
@@ -104,7 +104,7 @@ const PortfolioPage = () => {
       id: 8,
       title: "Restaurant Ordering App",
       category: "mobile",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A mobile app for restaurant ordering with real-time order tracking, menu customization, and payment processing.",
       technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
@@ -115,7 +115,7 @@ const PortfolioPage = () => {
       id: 9,
       title: "Brand Identity Design",
       category: "design",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/placeholder.png?height=600&width=800",
       description:
         "A comprehensive brand identity design including logo, color palette, typography, and brand guidelines.",
       technologies: ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
@@ -197,7 +197,7 @@ const PortfolioPage = () => {
               >
                 <div className="relative overflow-hidden h-64">
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={project.image || "/placeholder.png"}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
@@ -285,7 +285,7 @@ const PortfolioPage = () => {
                 client: "RetailCo Inc.",
                 description:
                   "How we helped a traditional retailer increase online sales by 200% with a modern e-commerce platform.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/placeholder.png?height=400&width=600",
                 link: "/portfolio/case-studies/retailco",
               },
               {
@@ -293,7 +293,7 @@ const PortfolioPage = () => {
                 client: "MediCare Solutions",
                 description:
                   "Redesigning a healthcare app to improve patient engagement and satisfaction scores by 45%.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/placeholder.png?height=400&width=600",
                 link: "/portfolio/case-studies/medicare",
               },
               {
@@ -301,7 +301,7 @@ const PortfolioPage = () => {
                 client: "Global Logistics Corp",
                 description:
                   "Modernizing legacy systems to improve operational efficiency and reduce costs by 30%.",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/placeholder.png?height=400&width=600",
                 link: "/portfolio/case-studies/global-logistics",
               },
             ].map((study, index) => (
@@ -316,7 +316,7 @@ const PortfolioPage = () => {
                 <div className="lg:col-span-2">
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img
-                      src={study.image || "/placeholder.svg"}
+                      src={study.image || "/placeholder.png"}
                       alt={study.title}
                       className="w-full h-auto"
                     />
@@ -369,21 +369,21 @@ const PortfolioPage = () => {
                   "Working with Colman Technologies transformed our business. Their expertise and dedication to our project exceeded our expectations.",
                 author: "Sarah Johnson",
                 position: "CEO, RetailCo Inc.",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/user.jpg?height=100&width=100",
               },
               {
                 quote:
                   "The team's technical knowledge and attention to detail resulted in a product that perfectly aligned with our vision and business goals.",
                 author: "Michael Chen",
                 position: "CTO, HealthTech Solutions",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/user.jpg?height=100&width=100",
               },
               {
                 quote:
                   "From concept to completion, Colman Technologies delivered a solution that not only met but exceeded our requirements. Highly recommended!",
                 author: "Emily Rodriguez",
                 position: "Marketing Director, Global Brands",
-                image: "/placeholder.svg?height=100&width=100",
+                image: "/user.jpg?height=100&width=100",
               },
             ].map((testimonial, index) => (
               <motion.div
@@ -408,7 +408,7 @@ const PortfolioPage = () => {
                 <p className="text-gray-600 mb-6 italic">{testimonial.quote}</p>
                 <div className="flex items-center">
                   <img
-                    src={testimonial.image || "/placeholder.svg"}
+                    src={testimonial.image || "/placeholder.png"}
                     alt={testimonial.author}
                     className="w-12 h-12 rounded-full mr-4 object-cover"
                   />
