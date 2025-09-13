@@ -94,7 +94,7 @@ const Pricing = () => {
         name: "Starter",
         description:
           "Essential digital solutions for small businesses and startups.",
-        price: 49990,
+        price: 5990,
         features: [
           { title: "Web Development (Basic)", included: true },
           { title: "UI/UX Design (Standard Templates)", included: true },
@@ -143,7 +143,7 @@ const Pricing = () => {
         name: "Pro",
         description:
           "Comprehensive solutions for growing businesses with advanced requirements.",
-        price: 99990,
+        price: 10000,
         features: [
           { title: "Web Development (Advanced)", included: true },
           { title: "UI/UX Design (Custom)", included: true },
@@ -211,7 +211,7 @@ const Pricing = () => {
         name: "Enterprise",
         description:
           "Tailored solutions for large organizations with complex requirements and scale.",
-        price: 249990,
+        price: 12800,
         features: [
           { title: "Web Development (Premium)", included: true },
           { title: "UI/UX Design (Premium)", included: true },
@@ -286,7 +286,7 @@ const Pricing = () => {
         name: "Starter",
         description:
           "Essential digital solutions for small businesses and startups.",
-        price: 79990,
+        price: 7900,
         features: [
           { title: "Web Development (Standard)", included: true },
           { title: "UI/UX Design (Custom Templates)", included: true },
@@ -354,7 +354,7 @@ const Pricing = () => {
         name: "Pro",
         description:
           "Comprehensive solutions for growing businesses with advanced requirements.",
-        price: 149990,
+        price: 14500,
         features: [
           { title: "Web Development (Advanced)", included: true },
           { title: "UI/UX Design (Premium)", included: true },
@@ -427,7 +427,7 @@ const Pricing = () => {
         name: "Enterprise",
         description:
           "Tailored solutions for large organizations with complex requirements and scale.",
-        price: 349990,
+        price: 21300,
         features: [
           { title: "Web Development (Premium)", included: true },
           { title: "UI/UX Design (Premium)", included: true },
@@ -502,7 +502,7 @@ const Pricing = () => {
         name: "Starter",
         description:
           "Essential digital solutions for small businesses and startups.",
-        price: 129990,
+        price: 28500,
         features: [
           { title: "Web Development (Advanced)", included: true },
           { title: "UI/UX Design (Premium)", included: true },
@@ -575,7 +575,7 @@ const Pricing = () => {
         name: "Pro",
         description:
           "Comprehensive solutions for growing businesses with advanced requirements.",
-        price: 249990,
+        price: 44600,
         features: [
           { title: "Web Development (Premium)", included: true },
           { title: "UI/UX Design (Premium)", included: true },
@@ -648,7 +648,7 @@ const Pricing = () => {
         name: "Enterprise",
         description:
           "Tailored solutions for large organizations with complex requirements and scale.",
-        price: 499990,
+        price: 70800,
         features: [
           { title: "Web Development (Enterprise)", included: true },
           { title: "UI/UX Design (Enterprise)", included: true },

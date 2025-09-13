@@ -27,7 +27,7 @@ const PortfolioPage = () => {
       id: 1,
       title: "E-Commerce Platform",
       category: "web",
-      image: "/placeholder.png?height=600&width=800",
+      image: "/projects/bobby2.png?height=600&width=800",
       description:
         "A comprehensive e-commerce solution with advanced product filtering, payment integration, and inventory management.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
@@ -38,7 +38,7 @@ const PortfolioPage = () => {
       id: 2,
       title: "Healthcare Mobile App",
       category: "mobile",
-      image: "/placeholder.png?height=600&width=800",
+      image: "/projects/fashion.png?height=600&width=800",
       description:
         "A patient-centered mobile application for appointment scheduling, medical records access, and telemedicine.",
       technologies: ["React Native", "Firebase", "Node.js"],
@@ -49,7 +49,7 @@ const PortfolioPage = () => {
       id: 3,
       title: "Financial Dashboard",
       category: "web",
-      image: "/placeholder.png?height=600&width=800",
+      image: "/projects/car2.png?height=600&width=800",
       description:
         "An interactive financial dashboard with real-time data visualization, reporting, and analytics.",
       technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
       id: 4,
       title: "Travel Companion App",
       category: "mobile",
-      image: "/placeholder.png?height=600&width=800",
+      image: "/projects/grill.png?height=600&width=800",
       description:
         "A feature-rich travel app with itinerary planning, location-based recommendations, and offline maps.",
       technologies: ["Flutter", "Google Maps API", "Firebase"],
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
       id: 5,
       title: "Corporate Website Redesign",
       category: "design",
-      image: "/placeholder.png?height=600&width=800",
+      image: "/projects/health.png?height=600&width=800",
       description:
         "A complete redesign of a corporate website focusing on user experience, accessibility, and modern aesthetics.",
       technologies: ["Figma", "Adobe XD", "HTML/CSS", "JavaScript"],
@@ -104,7 +104,7 @@ const PortfolioPage = () => {
       id: 8,
       title: "Restaurant Ordering App",
       category: "mobile",
-      image: "/placeholder.png?height=600&width=800",
+      image: "/projects/grill2.png?height=600&width=800",
       description:
         "A mobile app for restaurant ordering with real-time order tracking, menu customization, and payment processing.",
       technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
@@ -199,7 +199,7 @@ const PortfolioPage = () => {
                   <img
                     src={project.image || "/placeholder.png"}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-6">
@@ -367,21 +367,21 @@ const PortfolioPage = () => {
               {
                 quote:
                   "Working with Colman Technologies transformed our business. Their expertise and dedication to our project exceeded our expectations.",
-                author: "Sarah Johnson",
+                author: "Benson Gitau",
                 position: "CEO, RetailCo Inc.",
                 image: "/user.jpg?height=100&width=100",
               },
               {
                 quote:
                   "The team's technical knowledge and attention to detail resulted in a product that perfectly aligned with our vision and business goals.",
-                author: "Michael Chen",
+                author: "Joel Malema",
                 position: "CTO, HealthTech Solutions",
                 image: "/user.jpg?height=100&width=100",
               },
               {
                 quote:
                   "From concept to completion, Colman Technologies delivered a solution that not only met but exceeded our requirements. Highly recommended!",
-                author: "Emily Rodriguez",
+                author: "Jerop Sheilah",
                 position: "Marketing Director, Global Brands",
                 image: "/user.jpg?height=100&width=100",
               },

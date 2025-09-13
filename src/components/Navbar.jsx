@@ -654,10 +654,9 @@ function DoubleNavbar() {
         aria-label="Main menu"
       >
         {/* Mobile Menu Header */}
-        <div className="p-4 flex items-center justify-between border-b border-gray-700">
-          <div className="flex items-center space-x-2">
-            <img src="/logo.png" alt="Logo" className="h-8" />
-            <span className="font-bold">COLMAN</span>
+        <div className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-900 px-4 py-3 flex items-center justify-between border-b border-gray-700">
+          <div className="">
+            <img src="/new_logo2.png" alt="Logo" className="h-6" />
           </div>
           <button
             className="text-white p-2 rounded-md hover:bg-white/10 transition-colors"
